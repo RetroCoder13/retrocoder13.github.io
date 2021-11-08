@@ -1,10 +1,14 @@
+html{
+    background-color: #111111;
+}
+
 p{
-    font-family: OCR A;
+    font-family: OCR A, Courier;
     text-align: center;
 }
 
 button{
-    font-family: OCR A;
+    font-family: OCR A, Courier;
     background-color: gray;
     cursor: pointer;
     margin: 10px;
@@ -18,3 +22,30 @@ button{
 button:hover{
     background-color: lightgray;
 }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+/* li{
+    float: left;
+} */
+  
+li a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: OCR A, Courier;
+    width: 100px;
+}
+  
+  li a:hover{
+    background-color: #111;
+  }
