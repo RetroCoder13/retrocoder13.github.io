@@ -18,7 +18,7 @@ ul{
 /* li{
     float: left;
 } */
-  
+
 li a{
     float: left;
     display: block;
@@ -30,6 +30,6 @@ li a{
     width: 100px;
 }
   
-  li a:hover{
+li a:hover{
     background-color: #111;
   }
