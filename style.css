@@ -20,7 +20,7 @@ ul{
     float: left;
 } */
 
-a{
+a.button{
     background-color: #333;
     float: left;
     display: block;
@@ -33,11 +33,17 @@ a{
     height: 30px;
 }
   
-a:hover{
+a:hover.button{
     background-color: #111;
 }
 
 li.side{
     position: absolute;
     left: 88.7%;
+}
+
+h1{
+    font-family: OCR A, Courier;
+    text-align: center;
+    color: white;
 }
