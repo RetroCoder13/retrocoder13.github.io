@@ -29,8 +29,14 @@ a{
     text-decoration: none;
     font-family: OCR A, Courier;
     width: 100px;
+    height: 30px;
 }
   
 a:hover{
     background-color: #111;
+}
+
+li.side{
+    position: absolute;
+    left: 88.7%;
 }
