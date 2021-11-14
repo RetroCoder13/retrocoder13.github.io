@@ -55,7 +55,7 @@ h1{
 }
 
 #fade{
-    animation: fade 10s;
+    animation: fade 1s;
 }
 
 @keyframes fade{
