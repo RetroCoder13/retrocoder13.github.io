@@ -7,11 +7,6 @@ window.onload=function(){
         mouseY = mouse.clientY
         mouseClick = mouse.buttons
     })
-    canvas.addEventListener('touchmove',function(touch){
-        touchX = touch.clientX
-        touchY = touch.clientY
-        //mouseClick = e.buttons
-    })
 }
 
 function update(){
@@ -19,8 +14,4 @@ function update(){
         ctx.fillStyle = "#FF0000";
         ctx.fillRect(mouseX,mouseY,10,10);
     }
-    //if (mouseClick == 1){
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(touchX,touchY,10,10);
-    //}
 }
