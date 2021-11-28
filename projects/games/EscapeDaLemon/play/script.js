@@ -29,6 +29,12 @@ window.onload=function(){
     setInterval(update,1000/120);
 
     setVariable()
+    playerX = -50
+    playerY = -50
+    lemonX = -50
+    lemonY = -50
+    coinX = -50
+    coinY = -50
     game = false
 
     document.addEventListener('mousedown',function(mouse){
