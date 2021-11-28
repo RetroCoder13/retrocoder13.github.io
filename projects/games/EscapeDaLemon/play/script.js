@@ -6,6 +6,7 @@ function setVariable(){
     lives = 5
     previousLife = lives
     game = true
+    mouseClick = 0
 
     playerWidth = Scale * 50;
     playerHeight = Scale * 50;
@@ -28,6 +29,7 @@ window.onload=function(){
     setInterval(update,1000/120);
 
     setVariable()
+    game = false
 
     document.addEventListener('mousedown',function(mouse){
         mouseClick = mouse.buttons;
@@ -154,7 +156,7 @@ function update(){
         };
     }
     if (game == false){
-        gameOver = ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2);
+        gameOver = ctx.fillText("Click To Play", canvas.width/2, canvas.height/2);
         if (mouseClick == 1){
             setVariable();
         };
