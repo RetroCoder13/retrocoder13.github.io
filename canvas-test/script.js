@@ -2,20 +2,19 @@ window.onload=function(){
     canvas = document.getElementById('game');
     ctx = canvas.getContext('2d');
     setInterval(update,1000/120);
-    document.addEventListener('mousedown',function(mouse){
-        mouseX = mouse.clientX - 125;
-        mouseY = mouse.clientY - 45;
-        mouseClick = mouse.buttons;
-    });
-    document.addEventListener('mousemove',function(mouse){
-        mouseX = mouse.clientX - 125;
-        mouseY = mouse.clientY - 45;
+    // document.addEventListener('mousedown',function(mouse){
+    //     mouseX = mouse.pageX + ((window.width - canvas.width));
+    //     mouseY = mouse.pageY + ((window.height - canvas.height));
+    //     mouseClick = mouse.buttons;
+    // });
+    canvas.addEventListener('mousemove',function(mouse){
+        mouseX = mouse.offsetX;
+        mouseY = mouse.offsetY;
         mouseClick = mouse.buttons;
     });
     document.addEventListener('keypress',function(keyboard){
         key = keyboard.key;
     });
-    picture = document.getElementById('RetroCoder');
     playerX = 10;
     playerY = 10;
 };
@@ -26,30 +25,12 @@ function update(){
     //     ctx.fillRect(mouseX,mouseY,10,10);
     // };
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    player = ctx.drawImage(picture, playerX, playerY, width="50", height="50");
-    // if (key == "w"){
-    //     key = 'none';
-    //     playerY -= 10
-    // };
-    // if (key == "a"){
-    //     key = 'none';
-    //     playerX -= 10
-    // };
-    // if (key == "s"){
-    //     key = 'none';
-    //     playerY += 10
-    // };
-    // if (key == "d"){
-    //     key = 'none';
-    //     playerX += 10
-    // };
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillRect(playerX, playerY, 50, 50);
+
     diffX = mouseX - playerX;
     diffY = mouseY - playerY;
 
-    // if (key == "w"){
-    //     key = 'none';
-    //     alert(diffX);
-    // };
     if (diffX > 0){
         playerX += 1;
     };
