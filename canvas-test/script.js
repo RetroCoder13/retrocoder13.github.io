@@ -2,21 +2,27 @@ window.onload=function(){
     canvas = document.getElementById('game');
     ctx = canvas.getContext('2d');
     setInterval(update,1000/120);
+
+    playerX = 10;
+    playerY = 10;
+    playerScale = 1
+
+    playerWidth = playerScale * 50
+    playerHeight = playerScale * 50
+
     // document.addEventListener('mousedown',function(mouse){
     //     mouseX = mouse.pageX + ((window.width - canvas.width));
     //     mouseY = mouse.pageY + ((window.height - canvas.height));
     //     mouseClick = mouse.buttons;
     // });
     canvas.addEventListener('mousemove',function(mouse){
-        mouseX = mouse.offsetX;
-        mouseY = mouse.offsetY;
+        mouseX = mouse.offsetX - playerWidth/2;
+        mouseY = mouse.offsetY - playerHeight/2;
         mouseClick = mouse.buttons;
     });
     document.addEventListener('keypress',function(keyboard){
         key = keyboard.key;
     });
-    playerX = 10;
-    playerY = 10;
 };
 
 function update(){
@@ -26,7 +32,7 @@ function update(){
     // };
     ctx.clearRect(0,0,canvas.width,canvas.height);
     ctx.fillStyle = "#FFFFFF";
-    ctx.fillRect(playerX, playerY, 50, 50);
+    ctx.fillRect(playerX, playerY, playerWidth, playerHeight);
 
     diffX = mouseX - playerX;
     diffY = mouseY - playerY;
