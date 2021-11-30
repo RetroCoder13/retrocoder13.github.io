@@ -28,6 +28,15 @@ function setVariable(){
 window.onload=function(){
     canvas = document.getElementById('game');
     ctx = canvas.getContext('2d');
+    ctx.imageSmoothingEnabled = false;
+
+    playerTexture = new Image()
+    playerTexture.src = 'textures/player.png'
+    lemonTexture = new Image()
+    lemonTexture.src = 'textures/lemon.png'
+    coinTexture = new Image()
+    coinTexture.src = 'textures/coin.png'
+
     setInterval(update,1000/120);
 
     setVariable()
@@ -54,12 +63,16 @@ window.onload=function(){
 function update(){
     if (blank == true){
         ctx.clearRect(0,0,canvas.width,canvas.height);
+        // ctx.fillStyle = "#FFFFFF";
+        // player = ctx.fillRect(playerX, playerY, playerWidth, playerHeight);
+        // ctx.fillStyle = "#FFFF00";
+        // lemon = ctx.fillRect(lemonX, lemonY, lemonWidth, lemonHeight);
+        // ctx.fillStyle = "#555500";
+        // lemon = ctx.fillRect(coinX, coinY, coinWidth, coinHeight);
         ctx.fillStyle = "#FFFFFF";
-        player = ctx.fillRect(playerX, playerY, playerWidth, playerHeight);
-        ctx.fillStyle = "#FFFF00";
-        lemon = ctx.fillRect(lemonX, lemonY, lemonWidth, lemonHeight);
-        ctx.fillStyle = "#555500";
-        lemon = ctx.fillRect(coinX, coinY, coinWidth, coinHeight);
+        player = ctx.drawImage(playerTexture, x=playerX, y=playerY, width=playerWidth, height=playerHeight);
+        lemon = ctx.drawImage(lemonTexture, x=lemonX, y=lemonY, width=lemonWidth, height=lemonHeight);
+        coin = ctx.drawImage(coinTexture, x=coinX, y=coinY, width=coinWidth, height=coinHeight);
     };
     ctx.fillStyle = "#FFFFFF";
     ctx.font = "20px OCR A, Courier";
