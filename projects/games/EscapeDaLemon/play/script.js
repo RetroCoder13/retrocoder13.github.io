@@ -17,12 +17,12 @@ function setVariable(){
     coinWidth = Scale * 50;
     coinHeight = Scale * 50;
 
-    playerX = Math.random() * (canvas.width - playerWidth * 3);
-    playerY = Math.random() * (canvas.height - playerWidth * 3);
-    lemonX = Math.random() * (canvas.width - playerWidth * 3);
-    lemonY = Math.random() * (canvas.height - playerWidth * 3);
-    coinX = Math.random() * (canvas.width - playerWidth * 3);
-    coinY = Math.random() * (canvas.height - playerWidth * 3);
+    playerX = (Math.random() * (canvas.width - playerWidth * 2)) + playerWidth;
+    playerY = (Math.random() * (canvas.height - playerHeight * 2)) + playerHeight;
+    lemonX = (Math.random() * (canvas.width - playerWidth * 2)) + playerWidth;
+    lemonY = (Math.random() * (canvas.height - playerHeight * 2)) + playerHeight;
+    coinX = (Math.random() * (canvas.width - playerWidth * 2)) + playerWidth;
+    coinY = (Math.random() * (canvas.height - playerHeight * 2)) + playerHeight;
 }
 
 window.onload=function(){
@@ -224,7 +224,5 @@ function update(){
             setVariable();
         };
     }
-    else {
-        mouseClick = 0
-    };
+    mouseClick = 0;
 };
