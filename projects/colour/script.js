@@ -8,3 +8,7 @@ function update(){
         color.style.backgroundColor = "#000000";
     };
 };
+
+function copyClipboard(){
+    navigator.clipboard.writeText(color.value)
+}
