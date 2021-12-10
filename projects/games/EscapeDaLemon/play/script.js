@@ -155,6 +155,10 @@ function update(){
                 };
             };
 
+            if (lives <= 0){
+                lives = 0
+            };
+
             if (previousScore < score){
                 blank = false
                 movement = false
