@@ -1,3 +1,8 @@
+@font-face {
+    font-family: OCR A;
+    src: url(/fonts/OCRAEXT.TTF);
+}
+
 #color{
     background-color: black;
     color: white;

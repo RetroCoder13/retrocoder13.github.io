@@ -1,9 +1,14 @@
+@font-face {
+    font-family: OCR A;
+    src: url(/fonts/OCRAEXT.TTF);
+}
+
 html{
     background-color: #111111;
 }
 
 p{
-    font-family: OCR A, Courier;
+    font-family: OCR A;
     text-align: center;
     color: white;
 }
@@ -28,7 +33,7 @@ a.button{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: OCR A, Courier;
+    font-family: OCR A;
     width: 100px;
     height: 30px;
 }
@@ -43,7 +48,7 @@ li.side{
 }
 
 h1{
-    font-family: OCR A, Courier;
+    font-family: OCR A;
     text-align: center;
     color: white;
 }
@@ -63,7 +68,7 @@ h1{
     to {opacity: 1;}
 }
 
-canvas{
+#game{
     background-color: black;
     position: absolute;
     top: 55%;
@@ -73,4 +78,11 @@ canvas{
 
 .transparent{
     opacity: 0;
+}
+#FlappyBird{
+    background: linear-gradient(aqua 75%,lime 75%);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
