@@ -23,7 +23,7 @@ p{
 .players{
     position: absolute;
     right: 20px;
-    width: 100px;
+    width: 150px;
     border-style: solid;
     border-color: gray;
     padding: 25px;
@@ -60,4 +60,18 @@ div.newsstory h3{
 
 div.newsstory p{
     color: blue;
+}
+
+div.afk{
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    width: 150px;
+    border-style: solid;
+    border-color: gray;
+    padding: 25px;
+}
+
+table, th, td{
+    border: 1px solid gray;
 }
