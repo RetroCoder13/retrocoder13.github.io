@@ -1,10 +1,12 @@
+/* Colours: #323232 #A0DDFF #758ECD C1CEFE #7189FF #D7DEDC #3083DC */
+
 @font-face {
     font-family: OCR A;
     src: url(/fonts/OCRAEXT.TTF);
 }
 
 html{
-    background-color: #111111;
+    background-color: #323232;
 }
 
 p{
@@ -18,7 +20,9 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #3083DC;
+    border: transparent;
+    border-radius: 10px;
 }
   
 /* li{
@@ -26,20 +30,46 @@ ul{
 } */
 
 a.button{
-    background-color: #333;
     float: left;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-family: OCR A;
+    color: #000000;
     width: 100px;
     height: 30px;
+    border: transparent;
+    border-radius: 5px;
 }
   
 a:hover.button{
-    background-color: #111;
+    background-color: #292929;
+    animation: buttonHover .25s forwards;
+}
+
+@keyframes buttonHover {
+    to {font-size: 20px;}
+}
+
+a.projectButton{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: OCR A;
+    color: #000000;
+    width: 200px;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #444444;
+}
+
+a:hover.projectButton{
+    background-color: #292929;
+    animation: buttonHover .25s forwards;
 }
 
 li.side{
@@ -60,7 +90,7 @@ h1{
 }
 
 #fade{
-    animation: fade 1s;
+    animation: fade 2s;
 }
 
 @keyframes fade{
