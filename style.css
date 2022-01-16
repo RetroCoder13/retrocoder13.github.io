@@ -72,6 +72,28 @@ a:hover.projectButton{
     animation: buttonHover .25s forwards;
 }
 
+a.playButton{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: OCR A;
+    color: #FFFFFF;
+    width: 200px;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #444444;
+}
+
+a:hover.playButton{
+    background-color: #292929;
+    animation: buttonHover .25s forwards;
+}
+
 li.side{
     position: absolute;
     right: 10px;
@@ -115,4 +137,16 @@ h1{
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.imageLeft{
+    position: absolute;
+    left: 10%;
+    width: 500px;
+}
+
+.imageRight{
+    position: absolute;
+    right: 10%;
+    width: 500px;
 }
