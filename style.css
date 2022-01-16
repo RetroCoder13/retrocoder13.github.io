@@ -106,9 +106,9 @@ h1{
 }
 
 .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #fade{
@@ -149,4 +149,9 @@ h1{
     position: absolute;
     right: 10%;
     width: 500px;
+}
+
+.play{
+    width: 200px;
+    height: 60px;
 }
