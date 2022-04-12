@@ -3,7 +3,7 @@ window.onload = function(){
     buttons.innerHTML = "<ul>\
         <li>\
             <a href=\"https://retrocoder13.github.io\">\
-                <img src=\"./pictures/RetroCoder.png\" height=\"50px\" class=\"menu\">\
+                <img src=\"https://retrocoder13.github.io/pictures/RetroCoder.png\" height=\"50px\" class=\"menu\">\
             </a>\
         </li\
         <li>\
