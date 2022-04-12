@@ -2,8 +2,10 @@ window.onload = function(){
     var buttons = document.getElementById('Buttons')
     buttons.innerHTML = "<ul>\
         <li>\
-            <a class=\"button\" href=\"https://retrocoder13.github.io\">Home</a>\
-        </li>\
+            <a href=\"https://retrocoder13.github.io\">\
+                <img src=\"./pictures/RetroCoder.png\" height=\"50px\" class=\"menu\">\
+            </a>\
+        </li\
         <li>\
             <a class=\"button\" href=\"https://retrocoder13.github.io/projects/\">Projects</a>\
         </li>\

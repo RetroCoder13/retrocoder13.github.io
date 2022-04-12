@@ -24,6 +24,16 @@ ul{
     border: transparent;
     border-radius: 10px;
 }
+
+img.menu{
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    width: 30px;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+}
   
 /* li{
     float: left;
