@@ -10,7 +10,7 @@ window.onload = function(){
             <a class=\"button\" href=\"https://retrocoder13.github.io/projects/\">Projects</a>\
         </li>\
         <li>\
-            <a class=\"button\" href=\"https://retrocoder13.github.io/request/\">Request</a>\
+            <a class=\"button\" href=\"https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__iSmhHNUNTBKOE1CNkVQS1cwVVpDSlRZVzFZRktHNy4u\" target=\"_blank\">Request</a>\
         </li>\
         <li>\
             <a href=\"https://retrocoder13.github.io/credits/\" class=\"button\">Credits</a>\
