@@ -5,9 +5,15 @@ window.onload = function(){
             <a href=\"https://retrocoder13.github.io\">\
                 <img src=\"https://retrocoder13.github.io/pictures/RetroCoder.png\" height=\"50px\" class=\"menu\">\
             </a>\
-        </li\
+        </li>\
         <li>\
             <a class=\"button\" href=\"https://retrocoder13.github.io/projects/\">Projects</a>\
+        </li>\
+        <li>\
+            <a class=\"button\" href=\"https://retrocoder13.github.io/about/\">About</a>\
+        </li>\
+        <li>\
+            <a class=\"button\" href=\"https://retrocoder13.github.io/news/\">News</a>\
         </li>\
         <li>\
             <a href=\"https://retrocoder13.github.io/credits/\" class=\"button\">Credits</a>\

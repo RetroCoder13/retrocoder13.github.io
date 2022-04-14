@@ -145,3 +145,10 @@ h1{
     right: 10%;
     width: 500px;
 }
+
+div.news{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
