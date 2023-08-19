@@ -9,6 +9,7 @@ html{
     font-family: Rajdhani;
     overflow-x: hidden;
     text-align: center;
+    font-size: larger;
 }
 
 .menu{
@@ -36,7 +37,7 @@ html{
 a#link{
     position: relative;
     left: 0px;
-    font-size: 30px;
+    font-size: xx-large;
     text-decoration: none;
     color: white;
     transition-duration: .1s;
