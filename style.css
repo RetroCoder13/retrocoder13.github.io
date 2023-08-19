@@ -47,6 +47,7 @@ a#link:hover{
     cursor: pointer;
     position: relative;
     left: 10px;
+    color: #0484d1;
 }
 
 @keyframes pop-in {
