@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Rajdhani;
+    src: url(assets/fonts/Rajdhani-Regular.ttf);
+}
+
+html{
+    background-color: #111;
+    color: white;
+    font-family: Rajdhani;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.menu{
+    /* background-color: blue; */
+    position: absolute;
+    top: 0%;
+    right: -200px;
+    width: 250px;
+    height: 100%;
+    /* animation: pop-in 1s forwards; */
+    text-align: start;
+}
+
+.menu-info{
+    position: relative;
+    right: -75px;
+    top: -75px;
+    display: grid;
+}
+
+.menu-button{
+    width: 50px;
+}
+
+a#link{
+    position: relative;
+    left: 0px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    transition-duration: .1s;
+}
+
+a#link:hover{
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+
+@keyframes pop-in {
+    to{right: 0px;}
+}
+
+@keyframes pop-out {
+    from{right: 0px;}
+    to{right: -200px;}
+}
