@@ -49,7 +49,7 @@ a#link{
     text-decoration: none;
     color: white;
     transition-duration: .1s;
-    padding-left: 10px;
+    padding: 0px 10px;
 }
 
 a#link:hover{
@@ -76,7 +76,7 @@ a#link:hover{
     left: 10%;
 }
 
-.projects a{
+a{
     padding: 10px;
     font-size: x-large;
     text-decoration: none;
@@ -84,6 +84,6 @@ a#link:hover{
     transition-duration: .1s;
 }
 
-.projects a:hover{
+a:hover{
     color: #0484d1;
 }
