@@ -87,3 +87,13 @@ a{
 a:hover{
     color: #0484d1;
 }
+
+#titleLogo{
+    width: 500px;
+}
+
+@media only screen and (max-width: 1000px){
+    #titleLogo{
+        width: 50%;
+    }
+}
