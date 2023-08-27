@@ -1,154 +1,89 @@
-/* Colours: #323232 #A0DDFF #758ECD C1CEFE #7189FF #D7DEDC #3083DC */
-
 @font-face {
-    font-family: OCR A;
-    src: url(/fonts/OCRAEXT.TTF);
+    font-family: Rajdhani;
+    src: url(assets/fonts/Rajdhani-Regular.ttf);
 }
 
 html{
-    background-color: #111111;
-}
-
-p{
-    font-family: OCR A;
-    text-align: center;
+    background-color: #111;
     color: white;
+    font-family: Rajdhani;
+    overflow-x: hidden;
+    text-align: center;
+    font-size: larger;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    border: transparent;
-    border-radius: 10px;
+.menu{
+    /* background-color: blue; */
+    position: absolute;
+    top: 50px;
+    right: -200px;
+    width: 200px;
+    height: calc(100% - 50px);
+    /* animation: pop-in 1s forwards; */
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: start;
+    border-top-left-radius: 10px;
+    background-color: rgb(75,75,75);
 }
 
-img.menu{
-    float: left;
-    display: block;
-    padding: 14px 16px;
-    width: 30px;
-    height: 30px;
-    border: transparent;
-    border-radius: 5px;
-}
-  
-/* li{
-    float: left;
+/* .menu-info{
+    position: relative;
+    right: -75px;
+    top: -25px;
+    display: grid;
 } */
 
-a.button{
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: OCR A;
-    color: #FFFFFF;
-    width: 100px;
-    height: 30px;
-    border: transparent;
-    border-radius: 5px;
-}
-  
-a:hover.button{
-    background-color: #292929;
-    animation: buttonHover .25s forwards;
-}
-
-@keyframes buttonHover {
-    to {font-size: 20px;}
-}
-
-a.projectButton{
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: OCR A;
-    color: #FFFFFF;
-    width: 200px;
-    height: 30px;
-    border: transparent;
-    border-radius: 5px;
-    background-color: #444444;
-}
-
-a:hover.projectButton{
-    background-color: #292929;
-    animation: buttonHover .25s forwards;
-}
-
-a.playButton{
+.menu-button{
+    width: 50px;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
+    right: 0px;
+    top: 0px;
+}
+
+a#link{
+    position: relative;
+    left: 0px;
+    font-size: xx-large;
     text-decoration: none;
-    font-family: OCR A;
-    color: #FFFFFF;
-    width: 200px;
-    height: 30px;
-    border: transparent;
-    border-radius: 5px;
-    background-color: #444444;
-}
-
-a:hover.playButton{
-    background-color: #292929;
-    animation: buttonHover .25s forwards;
-}
-
-li.side{
-    position: absolute;
-    right: 10px;
-}
-
-h1{
-    font-family: OCR A;
-    text-align: center;
     color: white;
+    transition-duration: .1s;
+    padding: 0px 10px;
 }
 
-.center{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+a#link:hover{
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    color: #0484d1;
 }
 
-#fade{
-    animation: fade 2s;
+@keyframes pop-in {
+    to{right: 0px;}
 }
 
-@keyframes fade{
-    from {opacity: 0;}
-    to {opacity: 1;}
+@keyframes pop-out {
+    from{right: 0px;}
+    to{right: -200px;}
 }
 
-.transparent{
-    opacity: 0;
-}
-
-.imageLeft{
-    position: absolute;
+.projects{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    width: 80%;
     left: 10%;
-    width: 500px;
 }
 
-.imageRight{
-    position: absolute;
-    right: 10%;
-    width: 500px;
-}
-
-div.news{
+a{
     padding: 10px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 20px;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    transition-duration: .1s;
+}
+
+a:hover{
+    color: #0484d1;
 }
