@@ -15,23 +15,31 @@ html{
 .menu{
     /* background-color: blue; */
     position: absolute;
-    top: 0%;
+    top: 50px;
     right: -200px;
-    width: 250px;
-    height: 100%;
+    width: 200px;
+    height: calc(100% - 50px);
     /* animation: pop-in 1s forwards; */
-    text-align: start;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: start;
+    border-top-left-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
 }
 
-.menu-info{
+/* .menu-info{
     position: relative;
     right: -75px;
-    top: -75px;
+    top: -25px;
     display: grid;
-}
+} */
 
 .menu-button{
     width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 
 a#link{
@@ -41,6 +49,7 @@ a#link{
     text-decoration: none;
     color: white;
     transition-duration: .1s;
+    padding-left: 10px;
 }
 
 a#link:hover{
