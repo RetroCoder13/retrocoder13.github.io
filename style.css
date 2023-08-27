@@ -25,7 +25,7 @@ html{
     grid-template-columns: auto;
     align-content: start;
     border-top-left-radius: 10px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgb(75,75,75);
 }
 
 /* .menu-info{
@@ -66,4 +66,24 @@ a#link:hover{
 @keyframes pop-out {
     from{right: 0px;}
     to{right: -200px;}
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.projects a{
+    padding: 10px;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    transition-duration: .1s;
+}
+
+.projects a:hover{
+    color: #0484d1;
 }

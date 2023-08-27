@@ -13,7 +13,7 @@ function toggleMenu(){
 var button = document.createElement("div")
 button.id = "menu-button"
 button.className = "menu-button"
-button.innerHTML = `<img src="assets/textures/menu.png" width="50" height="50" onclick="toggleMenu()">`
+button.innerHTML = `<img src="https://retrocoder13.github.io/assets/textures/menu.png" width="50" height="50" onclick="toggleMenu()">`
 var menuData = document.createElement("div")
 menuData.id = "menu"
 menuData.className = "menu"
