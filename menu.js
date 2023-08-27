@@ -29,9 +29,7 @@ window.onload = function(){
 }
 
 document.addEventListener('mousedown',function(e){
-    if(menu == true && (e.clientX < window.innerWidth - 50 || e.clientY > window.innerHeight + 50)){
-        setTimeout(function(){
-            toggleMenu()
-        },10)
+    if(menu == true && (e.clientX < window.innerWidth - 200 || (e.clientX < window.innerWidth - 50 && e.clientY < 50))){
+        toggleMenu()
     }
 })
