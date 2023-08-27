@@ -27,3 +27,9 @@ window.onload = function(){
     document.body.append(button)
     document.body.append(menuData)
 }
+
+document.addEventListener('mousedown',function(e){
+    if(menu == true && (e.clientX < window.innerWidth - 50 || e.clientY > window.innerHeight + 50)){
+        toggleMenu()
+    }
+})
