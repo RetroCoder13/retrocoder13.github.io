@@ -96,4 +96,11 @@ a:hover{
     #titleLogo{
         width: 50%;
     }
+    .projects{
+        display: grid;
+        grid-template-columns: auto auto;
+        position: relative;
+        width: 80%;
+        left: 10%;
+    }
 }
