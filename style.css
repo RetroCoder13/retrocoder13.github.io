@@ -43,8 +43,6 @@ html{
 }
 
 a#link{
-    position: relative;
-    left: 0px;
     font-size: xx-large;
     text-decoration: none;
     color: white;
@@ -54,9 +52,8 @@ a#link{
 
 a#link:hover{
     cursor: pointer;
-    position: relative;
-    left: 10px;
     color: #0484d1;
+    padding: 0px 20px;
 }
 
 @keyframes pop-in {
