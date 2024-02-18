@@ -1,12 +1,9 @@
-@font-face {
-    font-family: Rajdhani;
-    src: url(assets/fonts/Rajdhani-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html{
     background-color: #111;
     color: white;
-    font-family: Rajdhani;
+    font-family: 'Montserrat';
     overflow-x: hidden;
     text-align: center;
     font-size: larger;
