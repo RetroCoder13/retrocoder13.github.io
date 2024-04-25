@@ -23,6 +23,7 @@ menuData.innerHTML = `
 <a href="https://retrocoder13.github.io/about/" id="link">About</a>
 <a href="https://retrocoder.itch.io/" id="link">itch.io</a>
 <a href="https://github.com/RetroCoder13/" id="link">GitHub</a>
+<a href="https://www.instagram.com/@retrocoder13" id="link">Instagram</a>
 `
 window.onload = function(){
     document.body.append(button)
