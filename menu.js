@@ -3,10 +3,10 @@ var menu = false
 function toggleMenu(){
     if(menu){
         menu = false
-        document.getElementById('menu').style.animation = "pop-out .5s forwards"
+        document.getElementById('menu').style.animation = "pop-out .5s forwards cubic-bezier(0.65, 0, 0.35, 1)"
     } else {
         menu = true
-        document.getElementById('menu').style.animation = "pop-in .5s forwards"
+        document.getElementById('menu').style.animation = "pop-in .5s forwards cubic-bezier(0.33, 1, 0.68, 1)"
     }
 }
 
