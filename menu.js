@@ -19,7 +19,7 @@ menuData.id = "menu"
 menuData.className = "menu"
 menuData.innerHTML = `
 <a href="https://retrocoder13.github.io/" id="link">Home</a>
-<a href="https://retrocoder13.github.io/projects/" id="link">Projects</a>
+<a href="https://retrocoder13.github.io/games/" id="link">Games</a>
 <a href="https://retrocoder13.github.io/about/" id="link">About</a>
 <a href="https://retrocoder.itch.io/" id="link">itch.io</a>
 <a href="https://github.com/RetroCoder13/" id="link">GitHub</a>
