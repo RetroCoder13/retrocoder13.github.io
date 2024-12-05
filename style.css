@@ -23,6 +23,8 @@ html{
     align-content: start;
     border-top-left-radius: 10px;
     background-color: rgb(75,75,75,0.95);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 /* .menu-info{
@@ -51,15 +53,6 @@ a#link:hover{
     cursor: pointer;
     color: #0484d1;
     padding: 0px 20px;
-}
-
-@keyframes pop-in {
-    to{right: 0px;}
-}
-
-@keyframes pop-out {
-    from{right: 0px;}
-    to{right: -200px;}
 }
 
 .projects{

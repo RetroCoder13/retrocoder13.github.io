@@ -1,19 +1,18 @@
 var menu = false
 
 function toggleMenu(){
+    menu = !menu
     if(menu){
-        menu = false
-        document.getElementById('menu').style.animation = "pop-out .5s forwards cubic-bezier(0.65, 0, 0.35, 1)"
+        document.getElementById('menu').style.right = "0px"
     } else {
-        menu = true
-        document.getElementById('menu').style.animation = "pop-in .5s forwards cubic-bezier(0.33, 1, 0.68, 1)"
+        document.getElementById('menu').style.right = "-200px"
     }
 }
 
 var button = document.createElement("div")
 button.id = "menu-button"
 button.className = "menu-button"
-button.innerHTML = `<img src="https://retrocoder13.github.io/assets/textures/menu.png" width="50" height="50" onclick="toggleMenu()">`
+button.innerHTML = `<img src="https://retrocoder13.github.io/assets/textures/menu.svg" width="50" height="50" onclick="toggleMenu()">`
 var menuData = document.createElement("div")
 menuData.id = "menu"
 menuData.className = "menu"
