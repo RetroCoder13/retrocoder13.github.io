@@ -22,7 +22,7 @@ menuData.innerHTML = `
 <a href="https://retrocoder13.github.io/about/" id="link">About</a>
 <a href="https://retrocoder.itch.io/" id="link">itch.io</a>
 <a href="https://github.com/RetroCoder13/" id="link">GitHub</a>
-<a href="https://www.instagram.com/retrocoder13" id="link">Instagram</a>
+<a href="https://www.instagram.com/archieanthony13" id="link">Instagram</a>
 <a href="https://www.youtube.com/@RetroCoder1313" id="link">YouTube</a>
 `
 window.onload = function(){
